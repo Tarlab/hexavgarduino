@@ -1,0 +1,291 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA328P-PU U3
+U 1 1 5A806315
+P 2850 2400
+F 0 "U3" H 2100 3650 50  0000 L BNN
+F 1 "ATMEGA328P-PU" H 3250 1000 50  0000 L BNN
+F 2 "DIL28" H 2850 2400 50  0001 C CIN
+F 3 "" H 2850 2400 50  0001 C CNN
+	1    2850 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1300 1950 1300
+Connection ~ 1750 1300
+Connection ~ 1750 1600
+Wire Wire Line
+	1750 1600 1950 1600
+Wire Wire Line
+	1750 1900 1950 1900
+$Comp
+L GND #PWR1
+U 1 1 5A8063DE
+P 1750 3900
+F 0 "#PWR1" H 1750 3650 50  0001 C CNN
+F 1 "GND" H 1750 3750 50  0000 C CNN
+F 2 "" H 1750 3900 50  0001 C CNN
+F 3 "" H 1750 3900 50  0001 C CNN
+	1    1750 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3500 1750 3900
+Wire Wire Line
+	1750 3600 1950 3600
+Wire Wire Line
+	1950 3500 1750 3500
+Connection ~ 1750 3600
+Text HLabel 1600 1300 0    60   Input ~ 0
+DC-5.0V
+Wire Wire Line
+	1750 1300 1750 1900
+$Comp
+L Crystal Y1
+U 1 1 5A8080F0
+P 5400 2150
+F 0 "Y1" H 5400 2300 50  0000 C CNN
+F 1 "Crystal" H 5400 2000 50  0000 C CNN
+F 2 "" H 5400 2150 50  0001 C CNN
+F 3 "" H 5400 2150 50  0001 C CNN
+	1    5400 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1900 5550 2450
+Wire Wire Line
+	5550 1900 3850 1900
+Wire Wire Line
+	3850 2000 5250 2000
+Wire Wire Line
+	5250 2000 5250 2450
+$Comp
+L CP C5
+U 1 1 5A8081D3
+P 5550 2600
+F 0 "C5" H 5575 2700 50  0000 L CNN
+F 1 "22pF" H 5575 2500 50  0000 L CNN
+F 2 "" H 5588 2450 50  0001 C CNN
+F 3 "" H 5550 2600 50  0001 C CNN
+	1    5550 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C4
+U 1 1 5A80825C
+P 5250 2600
+F 0 "C4" H 5275 2700 50  0000 L CNN
+F 1 "22pF" H 5275 2500 50  0000 L CNN
+F 2 "" H 5288 2450 50  0001 C CNN
+F 3 "" H 5250 2600 50  0001 C CNN
+	1    5250 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 5250 2150
+Connection ~ 5550 2150
+$Comp
+L GND #PWR2
+U 1 1 5A808318
+P 5250 3000
+F 0 "#PWR2" H 5250 2750 50  0001 C CNN
+F 1 "GND" H 5250 2850 50  0000 C CNN
+F 2 "" H 5250 3000 50  0001 C CNN
+F 3 "" H 5250 3000 50  0001 C CNN
+	1    5250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 5A808334
+P 5550 3000
+F 0 "#PWR3" H 5550 2750 50  0001 C CNN
+F 1 "GND" H 5550 2850 50  0000 C CNN
+F 2 "" H 5550 3000 50  0001 C CNN
+F 3 "" H 5550 3000 50  0001 C CNN
+	1    5550 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3000 5550 2750
+Wire Wire Line
+	5250 2750 5250 3000
+$Comp
+L R R1
+U 1 1 5A8084B0
+P 4900 3400
+F 0 "R1" V 4980 3400 50  0000 C CNN
+F 1 "470" V 4900 3400 50  0000 C CNN
+F 2 "" V 4830 3400 50  0001 C CNN
+F 3 "" H 4900 3400 50  0001 C CNN
+	1    4900 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5A808505
+P 4900 3600
+F 0 "R2" V 4980 3600 50  0000 C CNN
+F 1 "470" V 4900 3600 50  0000 C CNN
+F 2 "" V 4830 3600 50  0001 C CNN
+F 3 "" H 4900 3600 50  0001 C CNN
+	1    4900 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5A80852E
+P 4900 3800
+F 0 "R3" V 4980 3800 50  0000 C CNN
+F 1 "470" V 4900 3800 50  0000 C CNN
+F 2 "" V 4830 3800 50  0001 C CNN
+F 3 "" H 4900 3800 50  0001 C CNN
+	1    4900 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 3400 4750 3400
+Wire Wire Line
+	4450 3000 4450 3800
+Wire Wire Line
+	4450 3000 3850 3000
+Wire Wire Line
+	4450 3600 4750 3600
+Connection ~ 4450 3400
+Wire Wire Line
+	4450 3800 4750 3800
+Connection ~ 4450 3600
+$Comp
+L DB15_Female_HighDensity J1
+U 1 1 5A8085DF
+P 6600 3800
+F 0 "J1" H 6600 4650 50  0000 C CNN
+F 1 "DB15_Female_HighDensity" H 6600 4550 50  0000 C CNN
+F 2 "" H 5650 4200 50  0001 C CNN
+F 3 "" H 5650 4200 50  0001 C CNN
+	1    6600 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3400 6300 3400
+Wire Wire Line
+	5050 3600 6300 3600
+Wire Wire Line
+	5050 3800 6300 3800
+$Comp
+L GND #PWR4
+U 1 1 5A8086B9
+P 6150 4600
+F 0 "#PWR4" H 6150 4350 50  0001 C CNN
+F 1 "GND" H 6150 4450 50  0000 C CNN
+F 2 "" H 6150 4600 50  0001 C CNN
+F 3 "" H 6150 4600 50  0001 C CNN
+	1    6150 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4200 6150 4200
+Wire Wire Line
+	6150 3300 6150 4600
+Wire Wire Line
+	6300 4100 6150 4100
+Connection ~ 6150 4200
+Wire Wire Line
+	6300 3300 6150 3300
+Connection ~ 6150 4100
+Wire Wire Line
+	6300 3500 6150 3500
+Connection ~ 6150 3500
+Wire Wire Line
+	6300 3700 6150 3700
+Connection ~ 6150 3700
+$Comp
+L R R5
+U 1 1 5A808E72
+P 7350 4000
+F 0 "R5" V 7430 4000 50  0000 C CNN
+F 1 "47" V 7350 4000 50  0000 C CNN
+F 2 "" V 7280 4000 50  0001 C CNN
+F 3 "" H 7350 4000 50  0001 C CNN
+	1    7350 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7500 4000 8050 4000
+Wire Wire Line
+	8050 4000 8050 1500
+Wire Wire Line
+	8050 1500 3850 1500
+Wire Wire Line
+	3850 3200 4200 3200
+Wire Wire Line
+	4200 3200 4200 1600
+Wire Wire Line
+	4200 1600 7950 1600
+Wire Wire Line
+	7950 1600 7950 3800
+$Comp
+L R R4
+U 1 1 5A808F88
+P 7350 3800
+F 0 "R4" V 7430 3800 50  0000 C CNN
+F 1 "47" V 7350 3800 50  0000 C CNN
+F 2 "" V 7280 3800 50  0001 C CNN
+F 3 "" H 7350 3800 50  0001 C CNN
+	1    7350 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 3800 7200 3800
+Wire Wire Line
+	7950 3800 7500 3800
+Wire Wire Line
+	6900 4000 7200 4000
+Text Notes 8250 1650 0    60   ~ 0
+VGA connection schematic from\nhttp://www.gammon.com.au/forum/?id=11608
+$EndSCHEMATC

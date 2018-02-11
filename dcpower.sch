@@ -1,0 +1,210 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 7550 3450 2    60   Input ~ 0
+DC-3.3V
+Text HLabel 7550 2700 2    60   Input ~ 0
+DC-5.0V
+$Comp
+L LM7805_TO220 U1
+U 1 1 5A80680F
+P 4700 3450
+F 0 "U1" H 4550 3575 50  0000 C CNN
+F 1 "LM7805_TO220" H 4700 3575 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 4700 3675 50  0001 C CIN
+F 3 "" H 4700 3400 50  0001 C CNN
+	1    4700 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3450 5500 3450
+Wire Wire Line
+	5500 3450 6000 3450
+$Comp
+L +12V #PWR5
+U 1 1 5A806878
+P 3450 2600
+F 0 "#PWR5" H 3450 2450 50  0001 C CNN
+F 1 "+12V" H 3450 2740 50  0000 C CNN
+F 2 "" H 3450 2600 50  0001 C CNN
+F 3 "" H 3450 2600 50  0001 C CNN
+	1    3450 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3450 4200 3450
+Wire Wire Line
+	4200 3450 4400 3450
+Wire Wire Line
+	3450 2600 3450 3450
+$Comp
+L GND #PWR7
+U 1 1 5A806894
+P 4700 4200
+F 0 "#PWR7" H 4700 3950 50  0001 C CNN
+F 1 "GND" H 4700 4050 50  0000 C CNN
+F 2 "" H 4700 4200 50  0001 C CNN
+F 3 "" H 4700 4200 50  0001 C CNN
+	1    4700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5A806910
+P 4200 3800
+F 0 "C1" H 4225 3900 50  0000 L CNN
+F 1 "10uF" H 4225 3700 50  0000 L CNN
+F 2 "" H 4238 3650 50  0001 C CNN
+F 3 "" H 4200 3800 50  0001 C CNN
+	1    4200 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 5A8069DD
+P 4200 4200
+F 0 "#PWR6" H 4200 3950 50  0001 C CNN
+F 1 "GND" H 4200 4050 50  0000 C CNN
+F 2 "" H 4200 4200 50  0001 C CNN
+F 3 "" H 4200 4200 50  0001 C CNN
+	1    4200 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3450 4200 3650
+Connection ~ 4200 3450
+$Comp
+L C C2
+U 1 1 5A806A07
+P 5500 3800
+F 0 "C2" H 5525 3900 50  0000 L CNN
+F 1 "10uF" H 5525 3700 50  0000 L CNN
+F 2 "" H 5538 3650 50  0001 C CNN
+F 3 "" H 5500 3800 50  0001 C CNN
+	1    5500 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR8
+U 1 1 5A806A82
+P 5500 4200
+F 0 "#PWR8" H 5500 3950 50  0001 C CNN
+F 1 "GND" H 5500 4050 50  0000 C CNN
+F 2 "" H 5500 4200 50  0001 C CNN
+F 3 "" H 5500 4200 50  0001 C CNN
+	1    5500 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2700 5500 3450
+Wire Wire Line
+	5500 3450 5500 3650
+Connection ~ 5500 3450
+Wire Wire Line
+	4200 4200 4200 3950
+Wire Wire Line
+	4700 4200 4700 3750
+Wire Wire Line
+	5500 4200 5500 3950
+$Comp
+L LD1117S33TR_SOT223 U2
+U 1 1 5A806C8B
+P 6300 3450
+F 0 "U2" H 6150 3575 50  0000 C CNN
+F 1 "LD1117S33TR_SOT223" H 6300 3575 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3Lead_TabPin2" H 6300 3650 50  0001 C CNN
+F 3 "" H 6400 3200 50  0001 C CNN
+	1    6300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR9
+U 1 1 5A806D2D
+P 6300 4200
+F 0 "#PWR9" H 6300 3950 50  0001 C CNN
+F 1 "GND" H 6300 4050 50  0000 C CNN
+F 2 "" H 6300 4200 50  0001 C CNN
+F 3 "" H 6300 4200 50  0001 C CNN
+	1    6300 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4200 6300 3750
+Wire Wire Line
+	6600 3450 6750 3450
+Wire Wire Line
+	6750 3450 7550 3450
+$Comp
+L C C3
+U 1 1 5A806D70
+P 6750 3850
+F 0 "C3" H 6775 3950 50  0000 L CNN
+F 1 "10uF" H 6775 3750 50  0000 L CNN
+F 2 "" H 6788 3700 50  0001 C CNN
+F 3 "" H 6750 3850 50  0001 C CNN
+	1    6750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR10
+U 1 1 5A806DBB
+P 6750 4200
+F 0 "#PWR10" H 6750 3950 50  0001 C CNN
+F 1 "GND" H 6750 4050 50  0000 C CNN
+F 2 "" H 6750 4200 50  0001 C CNN
+F 3 "" H 6750 4200 50  0001 C CNN
+	1    6750 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 4200 6750 4000
+Wire Wire Line
+	6750 3700 6750 3450
+Connection ~ 6750 3450
+Wire Wire Line
+	5500 2700 7550 2700
+$EndSCHEMATC
